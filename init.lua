@@ -33,8 +33,8 @@ vim.api.nvim_create_autocmd('FileType', {
     callback = function(args)
         vim.keymap.set('i', '><RETURN>', '><ESC>T<yWf>a</<ESC>pA<BACKSPACE>><ESC>F<i<RETURN><ESC>O')
         vim.keymap.set('i', '><SPACE>', '><ESC>T<yWf>a</<ESC>pA<BACKSPACE>><ESC>F<i')
-        vim.o.tabstop = 4
-        vim.o.shiftwidth = 4
+        vim.o.tabstop = 2
+        vim.o.shiftwidth = 2
     end
 })
 
