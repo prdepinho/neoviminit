@@ -32,6 +32,7 @@ vim.keymap.set('t', '<c-w>k', '<Cmd>wincmd k<CR>')
 vim.keymap.set('t', '<c-w>j', '<Cmd>wincmd j<CR>')
 vim.keymap.set('t', '<c-w>h', '<Cmd>wincmd h<CR>')
 vim.keymap.set('t', '<c-w>l', '<Cmd>wincmd l<CR>')
+vim.keymap.set('t', '<c-w>:', '<C-\\><C-n>:')
 
 vim.api.nvim_create_autocmd('FileType', {
   pattern = {'html', 'xml'},
