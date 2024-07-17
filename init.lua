@@ -37,7 +37,7 @@ vim.keymap.set('t', '<c-w>:', '<C-\\><C-n>:')
 vim.api.nvim_create_autocmd('FileType', {
   pattern = {'html', 'xml'},
   callback = function(args)
-    vim.keymap.set('i', '><RETURN>', '><ESC>T<yWf>a</<ESC>pF<i<RETURN><TAB>')
+    vim.keymap.set('i', '><RETURN>', '><ESC>T<yWf>a</<ESC>pF<i<RETURN><ESC>O')
     vim.keymap.set('i', '><SPACE>', '><ESC>T<yWf>a</<ESC>pF<i')
   end
 })
